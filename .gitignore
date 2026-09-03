@@ -1,0 +1,10 @@
+# Editor and operating-system artifacts
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Local browser and temporary output
+.cache/
+tmp/
+*.tmp

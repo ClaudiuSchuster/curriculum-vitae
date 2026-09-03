@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Claudiu Schuster — Senior Cloud and Platform Engineer</title>
+  <desc id="description">Repository card for a bilingual German and English curriculum vitae.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090611"/>
+      <stop offset="0.58" stop-color="#10091a"/>
+      <stop offset="1" stop-color="#07050c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffdf4e"/>
+      <stop offset="0.33" stop-color="#f6bd7c"/>
+      <stop offset="0.66" stop-color="#ff3f9b"/>
+      <stop offset="1" stop-color="#a980ff"/>
+    </linearGradient>
+    <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#62e9dd"/>
+      <stop offset="1" stop-color="#a980ff"/>
+    </linearGradient>
+    <linearGradient id="portraitRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6bd7c"/>
+      <stop offset="0.48" stop-color="#ff3f9b"/>
+      <stop offset="1" stop-color="#a980ff"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#62e9dd" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#4ab4d8" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#4ab4d8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pinkGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff3f9b" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#ff3f9b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#eee7dc"/>
+    </linearGradient>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#fffaf1" fill-opacity="0.09"/>
+    </pattern>
+    <pattern id="paperGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#17131c" fill-opacity="0.10"/>
+    </pattern>
+    <clipPath id="portraitClip">
+      <circle cx="144" cy="205" r="61"/>
+    </clipPath>
+    <clipPath id="frontPageClip">
+      <rect x="830" y="92" width="374" height="466" rx="4"/>
+    </clipPath>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="pageShadow" x="-30%" y="-25%" width="170%" height="180%">
+      <feDropShadow dx="12" dy="16" stdDeviation="13" flood-color="#000000" flood-opacity="0.52"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#background)"/>
+  <rect width="1280" height="640" fill="url(#dotGrid)" opacity="0.35"/>
+  <ellipse cx="1035" cy="292" rx="380" ry="340" fill="url(#cyanGlow)"/>
+  <ellipse cx="1000" cy="56" rx="270" ry="210" fill="url(#pinkGlow)"/>
+
+  <g opacity="0.72">
+    <path d="M1012 34 L1280 0 L1280 174 Z" fill="#ff3f9b" fill-opacity="0.24"/>
+    <path d="M1012 34 L1280 174 L1124 208 Z" fill="#ffdf4e" fill-opacity="0.18"/>
+    <path d="M1012 34 L1124 208 L896 154 Z" fill="#62e9dd" fill-opacity="0.20"/>
+    <path d="M1012 34 L896 154 L820 0 Z" fill="#a980ff" fill-opacity="0.18"/>
+    <path d="M1012 34 L820 0 L1280 0 Z" fill="#ff3f9b" fill-opacity="0.10"/>
+  </g>
+
+  <path d="M674 521 C792 430 871 443 978 500 C1082 556 1176 532 1280 458" fill="none" stroke="#62e9dd" stroke-opacity="0.24" stroke-width="2"/>
+  <path d="M650 548 C800 444 902 480 1010 532 C1117 584 1195 546 1280 498" fill="none" stroke="#ff3f9b" stroke-opacity="0.19" stroke-width="1.5"/>
+  <rect x="1" y="1" width="1278" height="638" rx="26" fill="none" stroke="url(#cyanViolet)" stroke-opacity="0.36" stroke-width="2"/>
+
+  <text x="76" y="76" fill="#c8b8d3" font-family="Noto Sans, sans-serif" font-size="18" font-weight="700" letter-spacing="3">CLAUDIU SCHUSTER  /  CURRICULUM VITAE</text>
+  <rect x="76" y="101" width="302" height="5" rx="2.5" fill="url(#accent)"/>
+
+  <circle cx="151" cy="212" r="70" fill="#ff3f9b" fill-opacity="0.28" filter="url(#softGlow)"/>
+  <circle cx="150" cy="211" r="68" fill="url(#portraitRing)"/>
+  <circle cx="144" cy="205" r="64" fill="#17131c" stroke="#fffaf1" stroke-opacity="0.82" stroke-width="2"/>
+  <image href="profile.png" xlink:href="profile.png" x="83" y="144" width="122" height="122" preserveAspectRatio="xMidYMid slice" clip-path="url(#portraitClip)"/>
+
+  <text x="244" y="193" fill="#fffaf4" font-family="Noto Sans, sans-serif" font-size="57" font-weight="900" letter-spacing="-2.2">CLAUDIU</text>
+  <text x="244" y="249" fill="#fffaf4" font-family="Noto Sans, sans-serif" font-size="57" font-weight="900" letter-spacing="-2.2">SCHUSTER</text>
+  <text x="244" y="286" fill="#62e9dd" font-family="Noto Serif, serif" font-size="24" font-style="italic" font-weight="500">Senior Cloud &amp; Platform Engineer</text>
+
+  <text x="76" y="374" fill="#fffaf4" font-family="Noto Sans, sans-serif" font-size="34" font-weight="800">Architecture to operations.</text>
+  <text x="76" y="415" fill="#f6bd7c" font-family="Noto Sans, sans-serif" font-size="34" font-weight="800">Automation with purpose.</text>
+  <text x="76" y="454" fill="#bfb3c9" font-family="Noto Sans, sans-serif" font-size="18">15+ years across infrastructure, DevOps, security and software.</text>
+
+  <g font-family="Noto Sans, sans-serif" font-size="14" font-weight="800" letter-spacing="1.2">
+    <rect x="76" y="490" width="118" height="38" rx="19" fill="#17131c" stroke="#62e9dd" stroke-opacity="0.90"/>
+    <circle cx="96" cy="509" r="4" fill="#62e9dd"/>
+    <text x="141" y="515" text-anchor="middle" fill="#e7fffc">DE + EN</text>
+
+    <rect x="208" y="490" width="144" height="38" rx="19" fill="#17131c" stroke="#ffdf4e" stroke-opacity="0.82"/>
+    <text x="280" y="515" text-anchor="middle" fill="#fff7cf">15+ YEARS</text>
+
+    <rect x="366" y="490" width="163" height="38" rx="19" fill="#17131c" stroke="#ff3f9b" stroke-opacity="0.82"/>
+    <text x="447.5" y="515" text-anchor="middle" fill="#ffe3f1">OPEN SOURCE</text>
+  </g>
+
+  <text x="76" y="581" fill="#9789a4" font-family="Noto Sans, sans-serif" font-size="16">claudiuschuster.de</text>
+  <text x="248" y="581" fill="#5f546b" font-family="Noto Sans, sans-serif" font-size="16">github.com/ClaudiuSchuster/curriculum-vitae</text>
+
+  <g transform="rotate(4 1010 330)" opacity="0.46">
+    <rect x="846" y="80" width="350" height="458" rx="4" fill="#17131c" stroke="#a980ff" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#pageShadow)">
+    <rect x="830" y="92" width="374" height="466" rx="4" fill="url(#paper)"/>
+    <rect x="830" y="92" width="374" height="466" rx="4" fill="url(#paperGrid)" opacity="0.58"/>
+    <rect x="830" y="92" width="374" height="112" fill="#0d0915"/>
+
+    <g clip-path="url(#frontPageClip)" opacity="0.88">
+      <path d="M1094 92 L1204 92 L1204 198 Z" fill="#ff3f9b"/>
+      <path d="M1094 92 L1204 198 L1126 208 Z" fill="#ffdf4e"/>
+      <path d="M1094 92 L1126 208 L1047 161 Z" fill="#62e9dd"/>
+      <path d="M1094 92 L1047 161 L1028 92 Z" fill="#a980ff"/>
+    </g>
+
+    <text x="858" y="124" fill="#f6bd7c" font-family="Noto Sans, sans-serif" font-size="10" font-weight="800" letter-spacing="1.8">CLOUD · AUTOMATION · OPEN SOURCE</text>
+    <text x="858" y="158" fill="#fffaf4" font-family="Noto Sans, sans-serif" font-size="25" font-weight="900">CLAUDIU SCHUSTER</text>
+    <text x="858" y="183" fill="#62e9dd" font-family="Noto Serif, serif" font-size="13" font-style="italic">Senior Cloud &amp; Platform Engineer</text>
+
+    <rect x="830" y="204" width="374" height="25" fill="#ffdf4e"/>
+    <rect x="830" y="227" width="374" height="2" fill="#17131c"/>
+    <text x="852" y="221" fill="#17131c" font-family="Noto Sans, sans-serif" font-size="9" font-weight="900" letter-spacing="0.8">CURRICULUM VITAE · DEUTSCH + ENGLISH</text>
+
+    <rect x="856" y="254" width="29" height="29" fill="#62e9dd" stroke="#17131c" stroke-width="2"/>
+    <text x="870.5" y="274" text-anchor="middle" fill="#17131c" font-family="Noto Sans, sans-serif" font-size="10" font-weight="900">01</text>
+    <text x="898" y="273" fill="#17131c" font-family="Noto Sans, sans-serif" font-size="14" font-weight="900" letter-spacing="1.2">EXPERIENCE</text>
+    <line x1="898" y1="281" x2="1055" y2="281" stroke="#17131c" stroke-opacity="0.35"/>
+
+    <line x1="876" y1="302" x2="876" y2="448" stroke="#17131c" stroke-opacity="0.24" stroke-width="2"/>
+    <g fill="#ff3f9b" stroke="#17131c" stroke-width="1">
+      <circle cx="876" cy="312" r="5"/>
+      <circle cx="876" cy="360" r="5"/>
+      <circle cx="876" cy="408" r="5"/>
+    </g>
+    <g fill="#17131c" font-family="Noto Sans, sans-serif">
+      <text x="893" y="309" font-size="11" font-weight="900">FREELANCE CLOUD &amp; DEVOPS ENGINEER</text>
+      <text x="893" y="326" font-size="9" fill="#6c6272">Cloud · platforms · automation · open source</text>
+      <rect x="893" y="335" width="138" height="3" rx="1.5" fill="#17131c" fill-opacity="0.15"/>
+
+      <text x="893" y="357" font-size="11" font-weight="900">SENIOR CLOUD ENGINEER</text>
+      <text x="893" y="374" font-size="9" fill="#6c6272">Kubernetes · OpenShift · hybrid cloud</text>
+      <rect x="893" y="383" width="117" height="3" rx="1.5" fill="#17131c" fill-opacity="0.15"/>
+
+      <text x="893" y="405" font-size="11" font-weight="900">DEVOPS ENGINEER</text>
+      <text x="893" y="422" font-size="9" fill="#6c6272">CI/CD · infrastructure as code · Elastic</text>
+      <rect x="893" y="431" width="130" height="3" rx="1.5" fill="#17131c" fill-opacity="0.15"/>
+    </g>
+
+    <rect x="1058" y="254" width="119" height="186" fill="#fffaf1" stroke="#17131c" stroke-width="2"/>
+    <rect x="1071" y="268" width="71" height="18" fill="#17131c"/>
+    <text x="1106.5" y="281" text-anchor="middle" fill="#fffaf4" font-family="Noto Sans, sans-serif" font-size="8" font-weight="900" letter-spacing="1">CORE STACK</text>
+    <g font-family="Noto Sans, sans-serif" font-size="8" font-weight="800" fill="#17131c">
+      <rect x="1071" y="299" width="43" height="17" fill="#ffdf4e" stroke="#17131c"/>
+      <text x="1092.5" y="311" text-anchor="middle">K8S</text>
+      <rect x="1121" y="299" width="43" height="17" fill="#62e9dd" stroke="#17131c"/>
+      <text x="1142.5" y="311" text-anchor="middle">OCP</text>
+      <rect x="1071" y="323" width="43" height="17" fill="#f6bd7c" stroke="#17131c"/>
+      <text x="1092.5" y="335" text-anchor="middle">AZURE</text>
+      <rect x="1121" y="323" width="43" height="17" fill="#a980ff" stroke="#17131c"/>
+      <text x="1142.5" y="335" text-anchor="middle">IAC</text>
+      <rect x="1071" y="347" width="43" height="17" fill="#ffb5d8" stroke="#17131c"/>
+      <text x="1092.5" y="359" text-anchor="middle">CI/CD</text>
+      <rect x="1121" y="347" width="43" height="17" fill="#d9cef5" stroke="#17131c"/>
+      <text x="1142.5" y="359" text-anchor="middle">LINUX</text>
+    </g>
+    <text x="1071" y="390" fill="#17131c" font-family="Noto Sans, sans-serif" font-size="9" font-weight="900">BUILD. OPERATE.</text>
+    <text x="1071" y="404" fill="#17131c" font-family="Noto Sans, sans-serif" font-size="9" font-weight="900">AUTOMATE.</text>
+    <rect x="1071" y="416" width="82" height="3" rx="1.5" fill="url(#accent)"/>
+
+    <rect x="856" y="467" width="321" height="64" fill="#fffaf1" stroke="#17131c" stroke-width="2"/>
+    <rect x="856" y="467" width="6" height="64" fill="#62e9dd"/>
+    <text x="877" y="489" fill="#17131c" font-family="Noto Sans, sans-serif" font-size="10" font-weight="900">TECHNICAL RANGE</text>
+    <text x="877" y="508" fill="#6c6272" font-family="Noto Sans, sans-serif" font-size="9">Platform · observability · security · software</text>
+    <rect x="877" y="517" width="178" height="3" rx="1.5" fill="url(#accent)"/>
+  </g>
+</svg>
