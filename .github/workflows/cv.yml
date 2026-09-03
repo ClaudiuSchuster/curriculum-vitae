@@ -83,5 +83,5 @@ jobs:
             dist/SHA256SUMS \
             --verify-tag \
             --latest \
-            --title "Curriculum Vitae · $cv_release_label" \
+            --title "$cv_release_label · CV" \
             --notes "Verified German and English curriculum vitae from commit ${GITHUB_SHA}."
