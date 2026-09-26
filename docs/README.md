@@ -51,7 +51,7 @@ PDF metadata is normalized for reproducible rebuilds. Set `SOURCE_DATE_EPOCH` to
 4. Run `make preview` and visually inspect the generated contact sheet in [`dist/`](../dist/).
 5. Commit the edited sources together with the regenerated PDFs and previews.
 
-GitHub Actions repeats the complete public-readiness check for every push and pull request.
+Forgejo Actions repeats the complete public-readiness check for every push and pull request.
 
 Generate review contact sheets with:
 
@@ -79,11 +79,10 @@ This additional gate rejects role-specific or recruitment-related files and refe
 
 ## Releases and direct downloads
 
-Published CV snapshots use calendar tags such as `v2026.09.03`. Every release contains both PDFs plus `SHA256SUMS`, while the links below always resolve to the newest release:
+Published CV snapshots use calendar tags such as `v2026.09.26`. Every release contains both PDFs plus `SHA256SUMS`; the links below always resolve to the newest release:
 
-- [German CV — latest PDF](https://github.com/ClaudiuSchuster/curriculum-vitae/releases/latest/download/Claudiu_Schuster_CV_DE.pdf)
-- [English CV — latest PDF](https://github.com/ClaudiuSchuster/curriculum-vitae/releases/latest/download/Claudiu_Schuster_CV_EN.pdf)
-- [Release history](https://github.com/ClaudiuSchuster/curriculum-vitae/releases)
+- [German and English CVs — latest release](https://oss-oo.io/ClaudiuSchuster/curriculum-vitae/releases/latest)
+- [Release history](https://oss-oo.io/ClaudiuSchuster/curriculum-vitae/releases)
 
 Prepare and verify the release payload with:
 
@@ -92,7 +91,7 @@ make release-assets
 make public-check
 ```
 
-Pushing a `vYYYY.MM.DD` tag runs the full public-readiness gate and publishes the two verified PDFs with their checksums. A single GitHub Actions workflow covers pull-request checks, CodeQL analysis, main-branch verification and tagged releases.
+Pushing a `vYYYY.MM.DD` tag runs the full public-readiness gate and marks the two verified PDFs with their checksums. A single Forgejo Actions workflow (`.forgejo/workflows/build.yml`) covers pull-request checks, main-branch verification and tagged builds; releases are attached to the verified tag through the forge API.
 
 ## License
 
