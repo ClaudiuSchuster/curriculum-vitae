@@ -1,0 +1,37 @@
+# Reproducible CV build gate for the laboratory (source of truth).
+# Deliberately dependency-free: no actions/* marketplace pulls, only the
+# pinned job container — works regardless of the instance's action URL config.
+name: build
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]*"
+  pull_request:
+
+jobs:
+  build:
+    name: Build and verify
+    runs-on: oss-oo-internal
+    container:
+      image: docker.io/library/alpine:3.20
+    timeout-minutes: 15
+    steps:
+      - name: Install document tools and fonts
+        run: apk add --no-cache bash git make chromium coreutils grep poppler-utils librsvg rsvg-convert ripgrep font-noto
+
+      - name: Checkout
+        run: |
+          git init -q .
+          git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
+          # Full history: the public-readiness check audits every commit.
+          git fetch --quiet origin
+          git checkout --quiet "$GITHUB_SHA"
+
+      - name: Build and verify public CV package
+        env:
+          CV_OUTPUT_DIR: /tmp/cv-build
+          CHROME_BIN: /usr/bin/chromium-browser
+        run: make public-check

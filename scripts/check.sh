@@ -55,11 +55,13 @@ done
 
 for pdf in "${pdfs[@]}"; do
   [[ -s "$pdf" ]] || { printf 'Missing PDF: %s\n' "$pdf" >&2; exit 1; }
-  pdfinfo "$pdf" | grep -Eq '^Pages:[[:space:]]+2$'
-  pdfinfo "$pdf" | grep -Eq '^Page size:.*\(A4\)$'
+  # Consume-all-input grep forms: under `set -o pipefail`, `grep -q` can exit
+  # early enough to SIGPIPE the writer (pdffonts/pdfinfo) and fail the gate.
+  pdfinfo "$pdf" | grep -E '^Pages:[[:space:]]+2$' >/dev/null
+  pdfinfo "$pdf" | grep -E '^Page size:.*\(A4\)$' >/dev/null
   pdftotext "$pdf" "$review_dir/$(basename "$pdf" .pdf).txt"
   test -s "$review_dir/$(basename "$pdf" .pdf).txt"
-  pdffonts "$pdf" | grep -q 'NotoSans'
+  pdffonts "$pdf" | grep 'NotoSans' >/dev/null
 done
 
 grep -q 'Über 15 Jahre' "$review_dir/Claudiu_Schuster_CV_DE.txt"
