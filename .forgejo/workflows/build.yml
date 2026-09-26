@@ -14,7 +14,11 @@ on:
 jobs:
   build:
     name: Build and verify
-    runs-on: oss-oo-internal
+    # The oss-oo-internal label exists only on org-scoped runners (OSS-OO/OSS-Singularity),
+    # which never pick up jobs from user-owned repositories; oss-oo-public is the
+    # instance-global runner label that serves every owner (same pattern as the
+    # cinnamon-chatgpt-usage lane).
+    runs-on: oss-oo-public
     container:
       image: docker.io/library/alpine:3.20
     timeout-minutes: 15
